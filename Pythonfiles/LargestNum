@@ -1,0 +1,12 @@
+alist = [1, 25, 10, 17, 3]
+print alist
+
+def largest(input_list):
+	largest_num = 0 
+	for x in input_list: 
+		if x > largest_num:
+			largest_num = x 
+
+	return largest_num
+
+print largest(alist)

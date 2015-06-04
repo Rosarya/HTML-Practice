@@ -1,0 +1,15 @@
+alist = 'A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z'
+#state the list
+print alist
+#print original, that way you can easily compare
+
+def reverse(alist):
+	#name the function
+	answer = alist[::-1]
+	#reverse alist
+	return answer 
+	#get the revesed list back 
+
+
+print reverse(alist)
+#print the reversed version 

@@ -1,0 +1,32 @@
+import random
+
+#need to pick a number between 1 and 100
+#tells the user if guess was too high or two low 
+#tells number of times guessed < NAAAAAAAAAAAAAAWWWWWWWWWWWWW BRO 
+ #^only 1 try if same number 
+
+#generate a number
+secret_number = random.randint(1, 100)
+print secret_number
+guesses = 0 #Initialize a variable to store how many guesses the user has used
+
+#get a number 
+player_num = raw_input("Guess a whole number between 1 and 100 ")
+
+while player_num != secret_number:
+    if player_num < secret_number: 
+    	#player number too high 
+    	player_num = input("Sorry, my number is higher then that. Guess again. ")
+    	guesses+=1
+    elif player_num > secret_number:
+		#number too low 
+		player_num = input("Sorry, my number is lower then that. Guess again. ")
+		guesses+=1
+else:
+	#winner ding dig ding 
+	guesses+=1
+	print("CONGRATULATIONS! YOU GUESSED MY NUMBER, {}.".format(secret_number))
+	print("You took {} guesses!".format(guesses))
+
+
+	
