@@ -1,0 +1,20 @@
+table {
+	font-size: 40px;
+
+}
+
+.food{
+	color: blue; 
+}
+
+.types{
+	color: #FF33FF; 
+}
+
+#special{
+	font-family: comic sans ms;
+}
+
+body{
+	background-color: #33FFFF;
+}
